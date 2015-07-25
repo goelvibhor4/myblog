@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-$(document).ready(function(){
 
-$('#submit').click(function(){
-
-$.post("send.php", $("#mycontactform").serialize(),  function(response) {   
- $('#success').html(response);
- //$('#success').hide('slow');
-});
-return false;
-
-
-});
-
-});
-</script>
 </head>
 <body>
 
-<form action="" method="post" id="mycontactform" >
+<form action="" method="post" action="send.php" >
 <label for="name">Name:</label><br />
 <input type="text" name="name" id="name" /><br />
 <label for="email">Email:</label><br />
